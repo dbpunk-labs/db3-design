@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" modified="2022-10-24T04:24:00.417Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RodlbAvKbov9YMFfaak4" version="20.4.1" type="github" pages="2">
+  <diagram id="7UUNTbk9Td2jJB9_W89I" name="mysql_back_demo">
+    <mxGraphModel dx="946" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-1" value="MySQL" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-3" value="DB3" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-5" value="D-App Backup mysql to ddb" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="290" y="240" width="380" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-6" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;sketch=1;" parent="1" source="ndhAh-Zatj_Ej-Oiid27-5" target="ndhAh-Zatj_Ej-Oiid27-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="300" as="sourcePoint" />
+            <mxPoint x="190" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="170" />
+              <mxPoint x="200" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-7" value="Subscribe Binlog Event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ndhAh-Zatj_Ej-Oiid27-6" vertex="1" connectable="0">
+          <mxGeometry x="0.2335" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-8" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=1;sketch=1;" parent="1" source="ndhAh-Zatj_Ej-Oiid27-1" target="ndhAh-Zatj_Ej-Oiid27-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="350" as="sourcePoint" />
+            <mxPoint x="170" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-9" value="Binlog Event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ndhAh-Zatj_Ej-Oiid27-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.0148" y="25" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-10" value="Reciever" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="260" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-11" value="Transformer" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="260" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-12" value="Event" style="endArrow=classic;html=1;rounded=0;curved=1;" parent="1" source="ndhAh-Zatj_Ej-Oiid27-10" target="ndhAh-Zatj_Ej-Oiid27-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="390" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-13" value="DB3 SDK" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="260" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-14" value="SQL" style="endArrow=classic;html=1;rounded=0;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ndhAh-Zatj_Ej-Oiid27-11" target="ndhAh-Zatj_Ej-Oiid27-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-15" value="" style="endArrow=classic;html=1;rounded=0;curved=1;edgeStyle=orthogonalEdgeStyle;sketch=1;" parent="1" source="ndhAh-Zatj_Ej-Oiid27-13" target="ndhAh-Zatj_Ej-Oiid27-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="330" as="sourcePoint" />
+            <mxPoint x="660" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ndhAh-Zatj_Ej-Oiid27-16" value="SQL, delegate add, sign" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ndhAh-Zatj_Ej-Oiid27-15" vertex="1" connectable="0">
+          <mxGeometry x="0.1631" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-0JCY2wYArH2ejzyTGwn" name="tendermint">
+    <mxGraphModel dx="946" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-1" value="Tendermint (GO)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-2" value="Tendermin-rs&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-4" value="ABCI&lt;br&gt;KVStore app" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="yYQPXrAbNLX7cPyLssw9-4" target="yYQPXrAbNLX7cPyLssw9-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="450" as="sourcePoint" />
+            <mxPoint x="330" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="yYQPXrAbNLX7cPyLssw9-2" target="yYQPXrAbNLX7cPyLssw9-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="390" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-7" value="MySQL&lt;br&gt;DBMS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-8" value="DB3 storage engine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yYQPXrAbNLX7cPyLssw9-9" value="ABCI&lt;br&gt;KVStore app" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="180" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
