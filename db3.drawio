@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-13T04:58:26.800Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="QTF7eVrxCJlVnUiEQcso" version="20.5.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-13T05:09:13.250Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="Va3N8QhhMSvvwlslwne_" version="20.5.2" type="github" pages="5">
   <diagram id="au1mfuSCRIfY2lwQPLzJ" name="dvm">
     <mxGraphModel dx="1919" dy="-446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1178,6 +1178,25 @@
         <mxCell id="AwqJYShP68_Ub-fTXS_M-25" value="5.1 Verify Account, Balance, Credit, etc&lt;br&gt;5.2 Check QuerySessionInfo&lt;br&gt;" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;align=left;" vertex="1" parent="AwqJYShP68_Ub-fTXS_M-2">
           <mxGeometry x="45" y="560" width="10" height="180" as="geometry" />
         </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-51" value="1. Check and update SessionStore&lt;br&gt;2. Clean Timeout Session Store" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;align=left;" vertex="1" parent="AwqJYShP68_Ub-fTXS_M-2">
+          <mxGeometry x="40" y="900" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-52" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontSize=14;" edge="1" target="AwqJYShP68_Ub-fTXS_M-51" parent="AwqJYShP68_Ub-fTXS_M-2" source="AwqJYShP68_Ub-fTXS_M-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="880" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-54" value="Every 10 min" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="AwqJYShP68_Ub-fTXS_M-52">
+          <mxGeometry x="-0.287" y="1" relative="1" as="geometry">
+            <mxPoint x="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-53" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.gauge;fontSize=14;" vertex="1" parent="AwqJYShP68_Ub-fTXS_M-2">
+          <mxGeometry x="28.80000000000001" y="864.25" width="32.4" height="31.5" as="geometry" />
+        </mxCell>
         <mxCell id="AwqJYShP68_Ub-fTXS_M-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="600" width="30" height="60" as="geometry" />
         </mxCell>
@@ -1190,11 +1209,6 @@
           <mxGeometry x="0.0742" y="-52" relative="1" as="geometry">
             <mxPoint x="455" y="686" as="targetPoint" />
             <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AwqJYShP68_Ub-fTXS_M-13" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;SessionContext&lt;/b&gt;&lt;/font&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionTimeout,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;MaxQueryTimes,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionId&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Status&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Msg&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="AwqJYShP68_Ub-fTXS_M-8">
-          <mxGeometry x="0.2378" y="-3" relative="1" as="geometry">
-            <mxPoint x="-324" y="101" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AwqJYShP68_Ub-fTXS_M-22" value="2. Return Session context" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="AwqJYShP68_Ub-fTXS_M-8">
@@ -1237,6 +1251,15 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="529.5" y="1257.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-48" value="&lt;h1&gt;SessionStore&lt;/h1&gt;&lt;p&gt;HashMap&amp;lt;Account, SessionPool&amp;gt;&lt;/p&gt;&lt;p&gt;SessionPool : HashMap&amp;lt;SessionId, SessionInfoManager&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="800" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-49" value="&lt;h1&gt;SessionContext&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionTimeout,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;MaxQueryTimes,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionId&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Status&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Msg&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="600" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AwqJYShP68_Ub-fTXS_M-50" value="&lt;h1&gt;DB3Context&lt;/h1&gt;&lt;p&gt;SessionStore&lt;/p&gt;&lt;p&gt;AuthStore&lt;/p&gt;&lt;p&gt;StatInfo&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="960" width="230" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
