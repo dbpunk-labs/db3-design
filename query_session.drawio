@@ -1,1 +1,111 @@
-<mxfile host="app.diagrams.net" modified="2022-11-15T19:09:51.495Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.5.3" etag="ROzP9PL5VQlzbUNNVYUv" type="github"><diagram id="SEFAekmmqQ2Kh-bd5ih4">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-16T01:05:52.141Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="rv6q3GY9S-WzVa_2rNGI" version="20.5.3" type="github">
+  <diagram id="SEFAekmmqQ2Kh-bd5ih4" name="query_session">
+    <mxGraphModel dx="1625" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-4" value="SDK" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="100" height="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-5" value="Node" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="520" width="100" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-6" value="&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1.1 Verify Account, Balance, Credit&lt;br&gt;1.2 Initialize Session Manager&lt;br&gt;1.3 Add session into SessionPool&lt;br&gt;&lt;/span&gt;" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-5">
+          <mxGeometry x="45" y="90" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-7" value="3.1 Verify Account, Balance, Credit, and Session status&lt;br&gt;3.2 Query data&lt;br&gt;3.3 Compute proof if neccesary&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3.3 Accumulate session query stat&lt;/span&gt;&lt;/div&gt;" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;align=left;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-5">
+          <mxGeometry x="45" y="350" width="10" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-8" value="5.1 Verify Account, Balance, Credit, etc&lt;br&gt;5.2 Check QuerySessionInfo&lt;br&gt;" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;align=left;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-5">
+          <mxGeometry x="45" y="560" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-9" value="1. Check and update SessionStore&lt;br&gt;2. Clean Timeout Session Store" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;align=left;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-5">
+          <mxGeometry x="40" y="900" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontSize=14;" edge="1" parent="8kmBhMxVK-hRyDm2Hx2O-5" source="8kmBhMxVK-hRyDm2Hx2O-12" target="8kmBhMxVK-hRyDm2Hx2O-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="880" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-11" value="Every 10 min" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="8kmBhMxVK-hRyDm2Hx2O-10">
+          <mxGeometry x="-0.287" y="1" relative="1" as="geometry">
+            <mxPoint x="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-12" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.gauge;fontSize=14;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-5">
+          <mxGeometry x="28.80000000000001" y="864.25" width="32.4" height="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-13" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-14" value="1. Open Session" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-4" target="8kmBhMxVK-hRyDm2Hx2O-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="610" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;align=left;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-6" target="8kmBhMxVK-hRyDm2Hx2O-4">
+          <mxGeometry x="0.0742" y="-52" relative="1" as="geometry">
+            <mxPoint x="455" y="686" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-16" value="2. Return Session context" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="8kmBhMxVK-hRyDm2Hx2O-15">
+          <mxGeometry x="-0.7648" y="-2" relative="1" as="geometry">
+            <mxPoint x="-72" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-17" value="3. Query with SessionId" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;fontSize=14;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-4" target="8kmBhMxVK-hRyDm2Hx2O-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="870" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-18" value="4. Return QueryResult" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;fontSize=14;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-7" target="8kmBhMxVK-hRyDm2Hx2O-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="946" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-19" value="5. Close Session (SessionId)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;fontSize=14;" edge="1" parent="1" target="8kmBhMxVK-hRyDm2Hx2O-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.5" y="1080.0000000000005" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-20" value="6. Return SessionContext" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;fontSize=14;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.5" y="1251" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-21" value="MemPool" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="930" y="520" width="100" height="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=14;" vertex="1" parent="8kmBhMxVK-hRyDm2Hx2O-21">
+          <mxGeometry x="45" y="690" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-23" value="5.3 Submit Query Session" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;fontSize=14;" edge="1" parent="1" target="8kmBhMxVK-hRyDm2Hx2O-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="529.5" y="1210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-24" value="5.4 Submit Info (TxID, Hash)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;fontSize=14;" edge="1" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="529.5" y="1257.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-25" value="&lt;h1&gt;SessionStore&lt;/h1&gt;&lt;p&gt;HashMap&amp;lt;Account, SessionPool&amp;gt;&lt;/p&gt;&lt;p&gt;SessionPool : HashMap&amp;lt;SessionId, SessionInfoManager&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="800" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-26" value="&lt;h1&gt;SessionContext&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionTimeout,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;MaxQueryTimes,&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;SessionId&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Status&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Msg&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="600" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-27" value="&lt;h1&gt;DB3Context&lt;/h1&gt;&lt;p&gt;SessionStore&lt;/p&gt;&lt;p&gt;AuthStore&lt;/p&gt;&lt;p&gt;StatInfo&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="960" width="230" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-28" value="&lt;h1&gt;Questions&lt;/h1&gt;&lt;div&gt;1. How to maintain sessionID. Global&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1230" width="230" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
