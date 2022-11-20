@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-20T00:08:00.979Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="7DTKkFMunGPsSaWhBZ0d" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-20T03:58:04.610Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="WlJMopUj_4BPIc-iIMyU" version="20.5.3" type="github">
   <diagram id="SEFAekmmqQ2Kh-bd5ih4" name="query_session">
     <mxGraphModel dx="1092" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,7 +88,7 @@
             <mxPoint x="529.5" y="1210" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-24" value="5.4 Submit Info (TxID, Hash)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;fontSize=14;" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-22" edge="1">
+        <mxCell id="8kmBhMxVK-hRyDm2Hx2O-24" value="5.4 Submit Info (TxID, Hash, Signature)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;fontSize=14;" parent="1" source="8kmBhMxVK-hRyDm2Hx2O-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="529.5" y="1257.5" as="targetPoint" />
           </mxGeometry>
