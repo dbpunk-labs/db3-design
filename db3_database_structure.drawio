@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-23T03:34:56.788Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="YxAXE3VRE43GGKrJkNp0" version="20.8.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-23T03:49:20.683Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="B5H69I0de9tuZVII7cVT" version="20.8.10" type="github">
   <diagram name="Page-1" id="Nr-ZPTDzSXNh9YXBG3D3">
-    <mxGraphModel dx="809" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1049" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,13 +65,13 @@
           <mxGeometry x="580" y="490" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SE8nr3ef7S7woqF1FX29-30" value="Recrod" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="110" y="660" width="730" height="80" as="geometry" />
+          <mxGeometry x="125" y="1020" width="730" height="80" as="geometry" />
         </mxCell>
         <mxCell id="SE8nr3ef7S7woqF1FX29-31" value="Key&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="690" width="50" height="40" as="geometry" />
+          <mxGeometry x="135" y="1050" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SE8nr3ef7S7woqF1FX29-32" value="Value = TXID + ModifiedTime + Document" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="190" y="690" width="630" height="40" as="geometry" />
+          <mxGeometry x="205" y="1050" width="630" height="40" as="geometry" />
         </mxCell>
         <mxCell id="BuYLjKyW8J0pdunKHrLs-1" value="account_address + NAMESPACE + ns + user_key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="830" width="450" height="30" as="geometry" />
@@ -85,13 +85,13 @@
             <mxPoint x="650" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BuYLjKyW8J0pdunKHrLs-4" value="1. support Query account::ns::key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-4" value="1. support Query(addr, ns, user_key)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="650" y="830" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BuYLjKyW8J0pdunKHrLs-5" value="user_key + account_address" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-5" value="user_key + account_address + uid" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="125" y="950" width="450" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BuYLjKyW8J0pdunKHrLs-6" value="New primary key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-6" value="New data primary key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="920" width="135" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BuYLjKyW8J0pdunKHrLs-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -100,8 +100,44 @@
             <mxPoint x="655" y="964.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BuYLjKyW8J0pdunKHrLs-8" value="1. support&amp;nbsp; Query(key)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="680" y="940" width="130" height="30" as="geometry" />
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-8" value="1. support&amp;nbsp; Query(user_key)&lt;br&gt;2. support Query(user_key, addr)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="950" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.081;entryY=0.973;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SE8nr3ef7S7woqF1FX29-31" target="BuYLjKyW8J0pdunKHrLs-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="1040" as="sourcePoint" />
+            <mxPoint x="200" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-10" value="Index" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1220" width="730" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-11" value="Key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1250" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-12" value="Value = TXID + ModifiedTime + DataPrimaryKey" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1250" width="630" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-13" value="index_key + account_address + uid" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1150" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="1164.5" as="sourcePoint" />
+            <mxPoint x="650" y="1164.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-15" value="1. support&amp;nbsp; QueryWhere(index_item == &quot;index_key:&quot;)&lt;br&gt;2. support QueryWhere(index_item == &quot;index_key&quot;, addr)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1150" width="655" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.081;entryY=0.973;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BuYLjKyW8J0pdunKHrLs-11" target="BuYLjKyW8J0pdunKHrLs-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="1240" as="sourcePoint" />
+            <mxPoint x="195" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BuYLjKyW8J0pdunKHrLs-18" value="New index primary key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1120" width="135" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
